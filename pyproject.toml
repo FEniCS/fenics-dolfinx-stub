@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fenics-dolfinx"
+version = "0.0.1"
+description = "Placeholder package. DOLFINx is not distributed under this name yet."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "LGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [
+    { email = "fenics-steering-council@googlegroups.com" },
+    { name = "FEniCS Steering Council" },
+]
+
+[project.urls]
+Homepage = "https://fenicsproject.org"
+Source = "https://github.com/FEniCS/fenics-dolfinx-stub"
+DOLFINx = "https://github.com/FEniCS/dolfinx"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "RUF", "UP"]
